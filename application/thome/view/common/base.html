@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-focus" lang="zh"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="zh"> <!--<![endif]-->
+<head>
+ <meta charset="utf-8">
+
+ <title>{block name="title"}后台管理系统{/block}</title>
+
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+ {block name="meta"}{/block}
+
+ <link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css" media="all" />
+ <link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+ <link rel="stylesheet" href="__PUBLIC__/font-awesome/css/font-awesome.min.css">
+ {block name="style"}{/block}
+</head>
+<body>
+<div class="admin-main">
+{block name="main"}{/block}
+ </div>
+
+<script type="text/javascript" src="__PUBLIC__/layui/layui.js"></script>
+{block name="script"}{/block}
+
+</body>
+</html>

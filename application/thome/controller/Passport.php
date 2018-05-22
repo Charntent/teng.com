@@ -2,8 +2,6 @@
 namespace app\thome\controller;
 
 
-
-define('SITEID',1);
 use think\Controller;
 use app\thome\model\User;
 use think\facade\Session;
