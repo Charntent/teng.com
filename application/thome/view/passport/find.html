@@ -1,0 +1,43 @@
+{extend name="common:layout" /}
+{block name="title"}找回密码{/block}
+{block name="style"}
+<link rel="stylesheet" href="__PUBLIC__/css/passport.css">
+{/block}
+{block name="main"}
+<div class="wrapper">
+    <div class="wrap">
+        <div class="layout">
+            <div class="n-frame device-frame reg_frame" id="main_container">
+                <div class="external_logo_area"><a class="vivologo" id="logo_link" href="/"></a></div>
+                <div class="title-item t_c">
+                    <h4 class="title_big30">找回密码</h4>
+                </div>
+                <div class="outer-box">
+                    <div class="inner-box">
+                        <div class="password-step1">
+                            <form class="layui-form" action="" method="post">
+                                <div class="tip-ctn">
+                                    <div class="tip">请输入已注册的手机号码<a class="fr" href="/passport">我有账号</a></div>
+                                </div>
+                                <input type="hidden" id="client_id" value="3">
+                                <input type="hidden" id="redirect_uri" value="">
+                                <label class="labelbox" for="accountInput">
+                                    <input type="text" class="account" id="accountInput" name="account" placeholder="请输入手机号" lay-verify="phone" />
+                                </label>
+
+                                <div class="err_tip">
+                                    <div class="dis_box"><span></span></div>
+                                </div>
+                                <div class="link-btn"><a class="link nextstep link-able" lay-submit="" lay-filter="loginBtn">下一步</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+{block name='script'}
+<script type="text/javascript" src="__ROOT__dist/js/passport.js"></script>
+{/block}

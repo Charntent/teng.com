@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="ie9 no-focus" lang="zh"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-focus" lang="zh"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <title>{block name="title"}{/block}-藤.网管理控制台首页</title>
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    {block name="meta"}{/block}
+
+    <link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="__PUBLIC__/css/global.css" media="all">
+    <link rel="stylesheet" href="__PUBLIC__/font-awesome/css/font-awesome.min.css">
+    {block name="style"}{/block}
+</head>
+<body id="{$Request.module|strtolower}-{$Request.controller|strtolower}-{$Request.action|strtolower}" class="{$Request.module|strtolower}-{$Request.controller|strtolower}-{$Request.action|strtolower}">
+{block name="page-container"}
+<!-- Page Container -->
+<div id="page-container" class="header-navbar-fixed header-navbar-transparent">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header header header-demo">
+            <div class="layui-main">
+
+
+                <ul class="layui-nav admin-header-item">
+
+                    <li class="layui-nav-item">
+                        <a href="javascript:;" class="admin-header-user">
+                            <img src="__PUBLIC__/images/0.jpg" />
+                            <span>{$adminName}</span>
+                        </a>
+                        <dl class="layui-nav-child">
+
+                            <dd>
+                                <a href="javascript:;" id="setting"><i class="fa fa-gear" aria-hidden="true"></i> 修改密码</a>
+                            </dd>
+                            <dd>
+                                <a href="{:url('thome/console/logout')}"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="layui-nav admin-header-item-mobile">
+                    <li class="layui-nav-item">
+                        <a href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="layui-side layui-bg-black" id="admin-side">
+
+            <div class="layui-side-scroll" id="admin-navbar-side">
+                <div class="syslogo">
+                    <a href="/" class="logo-text">
+                        慧名机器人管理系统
+                    </a>
+                </div>
+                <div class="hm-navs" id="hm-navs"  lay-filter="side">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="layui-body" id="admin-body">
+            <div class="layui-tab admin-nav-card layui-tab-brief" lay-filter="admin-tab" lay-allowclose="true">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">
+                        <i class="fa fa-dashboard" aria-hidden="true"></i>
+                        <cite>系统首页</cite>
+                    </li>
+                </ul>
+                <div class="layui-tab-content" style="min-height: 150px; padding: 5px 0 0 0;">
+                    <div class="layui-tab-item layui-show">
+                        <iframe src="{:Url('console/homepage')}"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-footer footer footer-demo" id="admin-footer">
+            <div class="layui-main">
+                <p>{:date('Y')} &copy;
+                    <a href="https://www.huimingcn.com" target="_blank">www.huimingcn.com</a> LGPL license
+                </p>
+            </div>
+        </div>
+        <div class="site-tree-mobile layui-hide">
+            <i class="layui-icon">&#xe602;</i>
+        </div>
+        <div class="site-mobile-shade"></div>
+        <script type="text/javascript" src="__PUBLIC__/layui/layui.js"></script>
+        <script type="text/javascript" src="__PUBLIC__/datas/nav.js" ></script>
+        <script src="__PUBLIC__/js/index.js"></script>
+        <script>
+            layui.use('layer',function(){
+                var $ = layui.jquery,
+                        layer = layui.layer;
+
+                $('#setting').on('click',function(){
+                    layer.open({
+                        title:'修改密码',
+                        maxmin :true,
+                        type:2,
+                        content:"{:url('home/admin/editpwd')}",
+                        area:['520px','450px']
+                    });
+                });
+
+
+
+
+            });
+        </script>
+    </div>
+    {/block}
+{block name="script"}{/block}
+</body>
+</html>

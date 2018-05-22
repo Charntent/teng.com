@@ -1,0 +1,785 @@
+{extend name="common:layout" /}
+{block name="title"}组件{/block}
+{block name="style"}
+<link rel="stylesheet" href="__PUBLIC__/css/common.min.css">
+{/block}
+{block name="main"}
+<div class="container p90">
+    <section class="filter clearfix" id="filter" style="display:
+            block">
+        <div class="filter-order" id="J_filterOrder">
+            <a class="active" data-tag="0" data-mtype="store_list_sx_1" href="/compnent?sort=new">
+                首页
+            </a>
+            <a data-tag="1" data-mtype="store_list_sx_2" href="/compnent?sort=click">
+                列表页
+            </a>
+            <a data-tag="1" data-mtype="store_list_sx_2" href="/compnent?sort=click">
+                详情页
+            </a>
+            <a data-tag="2" data-mtype="store_list_sx_3" href="/compnent?sort=gd">
+                单页<i class="icon-arrow-down"></i>
+            </a>
+        </div>
+
+    </section>
+    <section class="goods-list" id="goodsList">
+        <ul class="goods-list-wrap clearfix" id="goodsListWrap">
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_1_compare" style="display: block;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_1" target="_blank" href="//detail.meizu.com/item/meilane3.html?skuId=6816&amp;click=store_list_kw_1" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 100px; left: 50px;">
+                                <dd class="active" data-mtype="store_list_kw_1_clr_1" data-skuid="6816">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_1_clr_2" data-skuid="6814">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-m2AJr_PAAp1B7CA5GY057.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-m2AJr_PAAp1B7CA5GY057.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_1_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_1_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 E3</h2>
+                        <h3 class="red" title="4月25日 10：00限量预售">
+                            4月25日 10：00限量预售
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1799</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_2_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_2" target="_blank" href="//detail.meizu.com/item/meilane3_j20.html?skuId=6822&amp;click=store_list_kw_2" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_2_clr_1" data-skuid="6822">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_2_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_2_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 E3 歼-20定制限量版</h2>
+                        <h3 class="red" title="">
+
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1999</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_3_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_3" target="_blank" href="//detail.meizu.com/item/meilans6.html?skuId=6195&amp;click=store_list_kw_3" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/02/F3/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/02/F3/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block;">
+                                <dd class="active" data-mtype="store_list_kw_3_clr_1" data-skuid="6195">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/F3/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/F3/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_3_clr_2" data-skuid="6210">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/03/00/Cgbj0Vpe--mAMyFWAAg-KcLUImc701.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/03/00/Cgbj0Vpe--mAMyFWAAg-KcLUImc701.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_3_clr_3" data-skuid="6212">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/F4/Cgbj0Fpe_CGAcgyOAAh0R9PxK8Y800.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/F4/Cgbj0Fpe_CGAcgyOAAh0R9PxK8Y800.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_3_clr_4" data-skuid="6214">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/F4/Cgbj0Fpe_A6AZLYIAAwckbZIp2U942.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/F4/Cgbj0Fpe_A6AZLYIAAwckbZIp2U942.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_3_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_3_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 S6</h2>
+                        <h3 class="red" title="5.7 英寸全面屏 Exynos疾速游戏芯片 现货销售">
+                            5.7 英寸全面屏 Exynos疾速游戏芯片 现货销售
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">999</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_4_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_4" target="_blank" href="//detail.meizu.com/item/meilannote6.html?skuId=4804&amp;click=store_list_kw_4" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGa6AThj0AA1hVmco7-o197.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGa6AThj0AA1hVmco7-o197.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block;">
+                                <dd class="active" data-mtype="store_list_kw_4_clr_1" data-skuid="4804">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGa6AThj0AA1hVmco7-o197.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGa6AThj0AA1hVmco7-o197.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_4_clr_2" data-skuid="4807">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGaeAUuvRAAw2yjTKOsQ629.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/03/Cgbj0VmtGaeAUuvRAAw2yjTKOsQ629.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_4_clr_3" data-skuid="4810">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/F5/Cgbj0FmtGa-AUvvOAA06LJSMLqY995.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/F5/Cgbj0FmtGa-AUvvOAA06LJSMLqY995.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_4_clr_4" data-skuid="4813">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/F5/Cgbj0FmtGa2AI-b8AAvNA3-7FQU194.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/F5/Cgbj0FmtGa2AI-b8AAvNA3-7FQU194.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_4_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_4_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 Note6</h2>
+                        <h3 class="red" title="旗舰双摄  领券最高减150元  还可享6期免息">
+                            旗舰双摄  领券最高减150元  还可享6期免息
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">899</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_5_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_5" target="_blank" href="//detail.meizu.com/item/meilane2.html?skuId=4204&amp;click=store_list_kw_5" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/00/2C/Cgbj0VkAUNiAQhISAAla6NENI0Q072.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/00/2C/Cgbj0VkAUNiAQhISAAla6NENI0Q072.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_5_clr_1" data-skuid="4204">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/2C/Cgbj0VkAUNiAQhISAAla6NENI0Q072.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/2C/Cgbj0VkAUNiAQhISAAla6NENI0Q072.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_5_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_5_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 E2</h2>
+                        <h3 class="red" title="领券立减80元，购机赠保护壳及防爆膜，赠完即止">
+                            领券立减80元，购机赠保护壳及防爆膜，赠完即止
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">899</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_6_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_6" target="_blank" href="//detail.meizu.com/item/pro7plus.html?skuId=4509&amp;click=store_list_kw_6" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/01/BC/Cgbj0Fl4OduAN6lZAAoYW04sCAc119.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/01/BC/Cgbj0Fl4OduAN6lZAAoYW04sCAc119.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block;">
+                                <dd class="active" data-mtype="store_list_kw_6_clr_1" data-skuid="4509">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/BC/Cgbj0Fl4OduAN6lZAAoYW04sCAc119.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/BC/Cgbj0Fl4OduAN6lZAAoYW04sCAc119.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_6_clr_2" data-skuid="4510">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/BB/Cgbj0Fl4OdSATStyAAwW-w8XnvQ309.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/BB/Cgbj0Fl4OdSATStyAAwW-w8XnvQ309.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_6_clr_3" data-skuid="4511">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/C9/Cgbj0Vl4OdqAQ-DMAA1XGkTJcSo199.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/C9/Cgbj0Vl4OdqAQ-DMAA1XGkTJcSo199.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_6_clr_4" data-skuid="4512">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/C9/Cgbj0Vl4OdOAGsDfAAuYs_pyDV0706.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/C9/Cgbj0Vl4OdOAGsDfAAuYs_pyDV0706.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_6_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_6_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族 PRO 7 Plus</h2>
+                        <h3 class="red" title="领券减150，赠价值199元ME20耳机 12期免息">
+                            领券减150，赠价值199元ME20耳机 12期免息
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">2799</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_7_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_7" target="_blank" href="//detail.meizu.com/item/meilan_6.html?skuId=5104&amp;click=store_list_kw_7" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzeAI4mGAA06dyxPdr8087.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzeAI4mGAA06dyxPdr8087.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block;">
+                                <dd class="active" data-mtype="store_list_kw_7_clr_1" data-skuid="5104">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzeAI4mGAA06dyxPdr8087.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzeAI4mGAA06dyxPdr8087.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_7_clr_2" data-skuid="5102">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/2F/Cgbj0VnCGzWAWqh8AAwk2MA0gtk390.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/2F/Cgbj0VnCGzWAWqh8AAwk2MA0gtk390.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_7_clr_3" data-skuid="5096">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzOABMFZAAq4uv7SLg8039.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/21/Cgbj0FnCGzOABMFZAAq4uv7SLg8039.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_7_clr_4" data-skuid="5107">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/30/Cgbj0VnCGzuARl88AAnFI7AK-Xs392.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/30/Cgbj0VnCGzuARl88AAnFI7AK-Xs392.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_7_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_7_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 6</h2>
+                        <h3 class="red" title="领券立减50元  购机享3期免息 顺丰包邮">
+                            领券立减50元  购机享3期免息 顺丰包邮
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">599</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_8_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_8" target="_blank" href="//detail.meizu.com/item/meizu15.html?skuId=7146&amp;click=store_list_kw_8" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/04/1A/Cgbj0VrcbmKALZ1BAA0NVqTeXpU942.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/04/1A/Cgbj0VrcbmKALZ1BAA0NVqTeXpU942.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block;">
+                                <dd class="active" data-mtype="store_list_kw_8_clr_1" data-skuid="7146">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/1A/Cgbj0VrcbmKALZ1BAA0NVqTeXpU942.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/1A/Cgbj0VrcbmKALZ1BAA0NVqTeXpU942.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_8_clr_2" data-skuid="7119">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0B/Cgbj0FrcblSAGHrPAAvT_qZZSA0427.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0B/Cgbj0FrcblSAGHrPAAvT_qZZSA0427.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_8_clr_3" data-skuid="7149">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0C/Cgbj0FrcbnGANGRlAAzqchlSKjQ833.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0C/Cgbj0FrcbnGANGRlAAzqchlSKjQ833.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_8_clr_4" data-skuid="7120">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0B/Cgbj0FrcbkeAW38NAAjvsXhhyFE066.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0B/Cgbj0FrcbkeAW38NAAjvsXhhyFE066.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_8_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_8_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族 15</h2>
+                        <h3 class="gray" title="4月29日0点开售  雕刻时光 重塑经典">
+                            4月29日0点开售  雕刻时光 重塑经典
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">2499</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_9_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_9" target="_blank" href="//detail.meizu.com/item/meilannote5.html?skuId=2960&amp;click=store_list_kw_9" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/00/C6/Cix_s1hGE9KAJ1E-AAv78Kz1Hok651.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/00/C6/Cix_s1hGE9KAJ1E-AAv78Kz1Hok651.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 100px; left: 50px;">
+                                <dd class="active" data-mtype="store_list_kw_9_clr_1" data-skuid="2960">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/C6/Cix_s1hGE9KAJ1E-AAv78Kz1Hok651.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/C6/Cix_s1hGE9KAJ1E-AAv78Kz1Hok651.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_9_clr_2" data-skuid="3840">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/C7/CnQOjVhGE9eAe1kpAAyqBrQO_tA582.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/C7/CnQOjVhGE9eAe1kpAAyqBrQO_tA582.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_9_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_9_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 Note5</h2>
+                        <h3 class="red" title="4000mAh真快充，金属指纹大运存">
+                            4000mAh真快充，金属指纹大运存
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1099</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_10_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_10" target="_blank" href="//detail.meizu.com/item/meizu_15plus.html?skuId=7152&amp;click=store_list_kw_10" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/04/0E/Cgbj0FrcbsCANuv_AAzufmGf2yU449.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/04/0E/Cgbj0FrcbsCANuv_AAzufmGf2yU449.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 150px; left: 25px;">
+                                <dd class="active" data-mtype="store_list_kw_10_clr_1" data-skuid="7152">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0E/Cgbj0FrcbsCANuv_AAzufmGf2yU449.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0E/Cgbj0FrcbsCANuv_AAzufmGf2yU449.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_10_clr_2" data-skuid="7131">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0D/Cgbj0FrcbqKANbtFAAu0nXkFYY4657.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0D/Cgbj0FrcbqKANbtFAAu0nXkFYY4657.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_10_clr_3" data-skuid="7132">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/1C/Cgbj0VrcbrCANJBMAAxI8Fi80MA520.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/1C/Cgbj0VrcbrCANJBMAAxI8Fi80MA520.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_10_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_10_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族 15 Plus</h2>
+                        <h3 class="gray" title="4月29日0点开售 雕刻时光 重塑经典">
+                            4月29日0点开售 雕刻时光 重塑经典
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">2999</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_11_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_11" target="_blank" href="//detail.meizu.com/item/meizu_m15.html?skuId=7129&amp;click=store_list_kw_11" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/04/18/Cgbj0VrcbgGACguHAAvWITdUav4636.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/04/18/Cgbj0VrcbgGACguHAAvWITdUav4636.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 150px; left: 25px;">
+                                <dd class="active" data-mtype="store_list_kw_11_clr_1" data-skuid="7129">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/18/Cgbj0VrcbgGACguHAAvWITdUav4636.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/18/Cgbj0VrcbgGACguHAAvWITdUav4636.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_11_clr_2" data-skuid="7130">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/19/Cgbj0VrcbhmAHzm7AAMI5v4clPg365.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/19/Cgbj0VrcbhmAHzm7AAMI5v4clPg365.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_11_clr_3" data-skuid="7156">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/04/0A/Cgbj0Frcbg-AHuXnAAKZuTv81HU003.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/04/0A/Cgbj0Frcbg-AHuXnAAKZuTv81HU003.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_11_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_11_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族 M15</h2>
+                        <h3 class="gray" title="4月29日0点开售 雕刻时光 重塑经典">
+                            4月29日0点开售 雕刻时光 重塑经典
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1699</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_12_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_12" target="_blank" href="//detail.meizu.com/item/pro7.html?skuId=4503&amp;click=store_list_kw_12" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/01/B9/Cgbj0Fl4OYOAbICrAA2zSL7wnnM117.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/01/B9/Cgbj0Fl4OYOAbICrAA2zSL7wnnM117.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 150px; left: 25px;">
+                                <dd class="active" data-mtype="store_list_kw_12_clr_1" data-skuid="4503">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/B9/Cgbj0Fl4OYOAbICrAA2zSL7wnnM117.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/B9/Cgbj0Fl4OYOAbICrAA2zSL7wnnM117.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_12_clr_2" data-skuid="4504">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/C7/Cgbj0Vl4OYOAUX0OAANCx61oezY176.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/C7/Cgbj0Vl4OYOAUX0OAANCx61oezY176.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_12_clr_3" data-skuid="4508">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/C5/Cgbj0Vl4NtOAASxNAA1GieKLm94287.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/C5/Cgbj0Vl4NtOAASxNAA1GieKLm94287.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_12_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_12_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族 PRO 7</h2>
+                        <h3 class="red" title="领券立减100元，赠价值199元ME20耳机  12期免息">
+                            领券立减100元，赠价值199元ME20耳机  12期免息
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1999</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_13_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_13" target="_blank" href="//detail.meizu.com/item/note6_onepiece.html?skuId=5047&amp;click=store_list_kw_13" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/02/31/Cgbj0VnCIPSAZlXMAA4noi5FGFE697.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/02/31/Cgbj0VnCIPSAZlXMAA4noi5FGFE697.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_13_clr_1" data-skuid="5047">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/02/31/Cgbj0VnCIPSAZlXMAA4noi5FGFE697.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/02/31/Cgbj0VnCIPSAZlXMAA4noi5FGFE697.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_13_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_13_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 Note6 航海王限量豪礼套装</h2>
+                        <h3 class="red" title="12期免息 领券省150元 ">
+                            12期免息 领券省150元
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1499</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_14_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_14" target="_blank" href="//detail.meizu.com/item/meilane3_j20dc.html?skuId=6823&amp;click=store_list_kw_14" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_14_clr_1" data-skuid="6823">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/03/BB/Cgbj0Vq9-l2APu_uAAPXN7i8zu8964.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_14_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_14_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 E3 歼-20定制典藏版</h2>
+                        <h3 class="red" title="">
+
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">2499</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_15_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_15" target="_blank" href="//detail.meizu.com/item/meilana5.html?skuId=6371&amp;click=store_list_kw_15" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/01/A7/Cgbj0FlfMo2AaRvXAAg86wu5yB4929.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/01/A7/Cgbj0FlfMo2AaRvXAAg86wu5yB4929.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 150px; left: 25px;">
+                                <dd class="active" data-mtype="store_list_kw_15_clr_1" data-skuid="6371">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/A7/Cgbj0FlfMo2AaRvXAAg86wu5yB4929.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/A7/Cgbj0FlfMo2AaRvXAAg86wu5yB4929.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_15_clr_2" data-skuid="6372">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/A6/Cgbj0FlfMnOAUQmcAAT1Qgc8hYY129.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/A6/Cgbj0FlfMnOAUQmcAAT1Qgc8hYY129.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_15_clr_3" data-skuid="6373">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/B5/Cgbj0VlfMpuAbcwyAAWTBQ-cImA497.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/B5/Cgbj0VlfMpuAbcwyAAWTBQ-cImA497.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_15_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_15_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 A5</h2>
+                        <h3 class="gray" title="5英寸高清屏 长续航">
+                            5英寸高清屏 长续航
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">828</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_16_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_16" target="_blank" href="//detail.meizu.com/item/meilan5s_lihe.html?skuId=3971&amp;click=store_list_kw_16" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/01/23/CnQOjVipUJyAAqh5AASAl6g_Nxo000.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/01/23/CnQOjVipUJyAAqh5AASAl6g_Nxo000.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_16_clr_1" data-skuid="3971">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/23/CnQOjVipUJyAAqh5AASAl6g_Nxo000.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/23/CnQOjVipUJyAAqh5AASAl6g_Nxo000.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_16_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_16_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 5s礼盒</h2>
+                        <h3 class="red" title="礼盒内含防爆膜+保护壳">
+                            礼盒内含防爆膜+保护壳
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">899</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_17_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_17" target="_blank" href="//detail.meizu.com/item/meilan5s.html?skuId=6186&amp;click=store_list_kw_17" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/01/1D/CnQOjVij9TqAWnwcAAndI9Fz2pU075.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/01/1D/CnQOjVij9TqAWnwcAAndI9Fz2pU075.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_17_clr_1" data-skuid="6186">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/01/1D/CnQOjVij9TqAWnwcAAndI9Fz2pU075.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/01/1D/CnQOjVij9TqAWnwcAAndI9Fz2pU075.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_17_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_17_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 5s</h2>
+                        <h3 class="gray" title="3G大运存，18W快充">
+                            3G大运存，18W快充
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">1028</span>
+                            <span class="vm-start">起</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_18_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_18" target="_blank" href="//detail.meizu.com/item/meilannote5_lihe.html?skuId=2922&amp;click=store_list_kw_18" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/00/D2/CnQOjVhSQH-AVlH-AARnft8Mvm4715.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/00/D2/CnQOjVhSQH-AVlH-AARnft8Mvm4715.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 50px; left: 75px;">
+                                <dd class="active" data-mtype="store_list_kw_18_clr_1" data-skuid="2922">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/D2/CnQOjVhSQH-AVlH-AARnft8Mvm4715.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/D2/CnQOjVhSQH-AVlH-AARnft8Mvm4715.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_18_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_18_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅蓝 Note5 礼盒版</h2>
+                        <h3 class="red" title="礼盒含防爆膜及保护壳">
+                            礼盒含防爆膜及保护壳
+                        </h3>
+                        <dd class="mod-price">
+                            <span class="vm-coupon">限时特惠</span>
+                            <span>￥</span>
+                            <span class="vm-price">899</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            <li class="gl-item" data-init="0">
+                <div class="compare-btn-list" id="J_compare" data-mtype="store_list_kw_19_compare" style="display: none;">
+                    <i class="iconfont  icon-duibi compare-duibi"></i>
+                    <span>对比</span>
+                </div>
+                <a data-mtype="store_list_kw_19" target="_blank" href="//detail.meizu.com/item/pro6plus.html?skuId=2811&amp;click=store_list_kw_19" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZWmAQ3l_ABWUG5mvowI625.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZWmAQ3l_ABWUG5mvowI625.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <div class="item-slide j-pro-wrap">
+                            <dl style="display: block; width: 100px; left: 50px;">
+                                <dd class="active" data-mtype="store_list_kw_19_clr_1" data-skuid="2811">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZWmAQ3l_ABWUG5mvowI625.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZWmAQ3l_ABWUG5mvowI625.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                                <dd data-mtype="store_list_kw_19_clr_2" data-skuid="2809">
+                                    <img width="40" height="40" class="lazy" data-original="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZXuAYp1LABY2I5awJck337.png@120x120.jpg" src="//openfile.meizu.com/group1/M00/00/C1/Cix_s1g-ZXuAYp1LABY2I5awJck337.png@120x120.jpg" style="display: inline;">
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="slide-btn j-modBtns" style="display: none;">
+                            <span data-mtype="store_list_kw_19_clr_l" class="prev iconfont disabled"></span>
+                            <span data-mtype="store_list_kw_19_clr_r" class="next iconfont"></span>
+                        </div>
+
+
+                        <h2>魅族PRO 6 Plus</h2>
+                        <h3 class="red" title="越强大越冷静">
+                            越强大越冷静
+                        </h3>
+                        <dd class="mod-price">
+                            <span>￥</span>
+                            <span class="vm-price">2699</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+{/block}
