@@ -7,8 +7,8 @@ use think\Validate;
 class Sites extends Validate{
 
     protected $rule =   [
-        'phone'  => 'checkPhone',
-        'password'   => 'checkPwd'
+        'site_name'  => 'require|max:25',
+        'site_logo'   => 'require',
     ];
 
     protected $message  =   [
