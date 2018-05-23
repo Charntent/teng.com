@@ -1,0 +1,28 @@
+body{
+    background: #f8f8f8;
+}
+.p90{
+    margin-top: 90px;
+}
+.filter {
+    margin: 30px 0 20px;
+}
+.filter-order {
+    float: left;
+}
+.filter-order a.active, .filter-order a:hover {
+    transition: all .2s;
+    color: #428bca;
+}
+.filter-order a {
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin-right: 20px;
+    line-height: 20px;
+    color: #666;
+}
+.filter, .filter-order a, .sl-category .mod-value-list, .sl-prop .mod-value-list {
+    position: relative;
+}
+.goods-list{position:relative;z-index:1;margin-bottom:20px;height:auto}.goods-list .goods-list-wrap{width:1252px;height:auto}.gl-item{ list-style:none;width:301px;height:416px;margin:0 12px 12px 0;float:left;position:relative;background:#fff;transition:all .3s ease}.gl-item a{display:block}.gl-item:hover{box-shadow:0 15px 30px rgba(0,0,0,.1)}.compare-btn-list{cursor:pointer;color:#666;position:absolute;margin-top:17px;margin-left:23px;display:none;z-index:2}.compare-btn-list i{margin-right:2px;color:#00c3f5}.compare-btn-list:hover{color:#00c3f5}.gl-item .gl-item-wrap{position:relative;text-align:center;padding:20px 30px 0}.gl-item .gl-item-wrap .sale-sign{position:absolute;top:22px;right:30px;z-index:1;height:40px;width:40px;border-radius:50%;color:#fff;font-size:12px;line-height:40px;text-align:center}.gl-item .mod-pic{position:relative;width:220px;height:220px;margin:0 auto 14px;text-align:center;border-radius:0;border:0}.gl-item h2,.gl-item h3{margin-bottom:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gl-item .mod-pic img{width:100%}.gl-item .mod-pic .picon{top:0;right:0}.gl-item h2{width:100%;height:21px;text-align:center;font-size:14px;color:#333}.gl-item h3{font-size:12px;color:#999}.gl-item h3.red{color:#E02B41}.gl-item h3 span{margin-right:5px;padding:0 5px;color:#fff;background-color:#E02B41}.gl-item .mod-price{position:relative;overflow:hidden;padding:0 30px;margin:0 0 8px;text-align:center;color:#E02B41}.gl-item .mod-price em{font-size:14px}.gl-item .mod-price .vm-price{font-size:18px}.gl-item .mod-price .vm-coupon{font-size:12px}.gl-item .mod-price .vm-start{color:#E02B41;font-size:12px}.item-slide{position:relative;width:200px;height:42px;margin:13px auto 15px;overflow:hidden}.item-slide dl{display:none;position:absolute;top:0;left:0;width:200px;height:42px}.item-slide dl dd{cursor:pointer;overflow:hidden;float:left;margin:0 4px;width:40px;height:40px;border:1px solid #EFEFEF;border-radius:4px}.item-slide dl dd.active{border-color:#bdbdbd}.slide-btn{display:none}.slide-btn .next,.slide-btn .prev{cursor:pointer;position:absolute;font-size:16px;color:#bdbdbd;top:265px}.slide-btn .next.disabled,.slide-btn .prev.disabled{color:#efefef}.slide-btn .prev{left:25px}.slide-btn .next{right:25px}.empty{width:380px;margin:120px auto 380px}.empty .empty-bd-pic{float:left;width:105px;height:135px;background:url(../img/panda-28eddf5190.png) no-repeat}.brand,.brand .intro,.brand img{width:100%}.brand .brand-banner,.brand .intro,.brand .intro .half{height:180px;overflow:hidden}.empty .empty-bd-info{margin-left:30px;float:left;font-size:14px;color:#666}.empty .empty-bd-info h4{font-size:18px;color:#00c3f5;margin:15px 0}
