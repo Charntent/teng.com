@@ -4,6 +4,7 @@
  By 贤心
 
 */
+
 #handles{
     padding-bottom: 20px;
 }
@@ -389,8 +390,13 @@ body .site-demo-nav .layui-nav-item{line-height: 40px}
 .admin-table-page .page .layui-laypage {margin: 6px 0 0 0;}
 
 /**/
-.admin-main {margin: 15px; position: relative}
-
+.admin-main {margin: 15px; position: relative;}
+.admin-main:after{
+    display: block;
+    content: ' ';
+    zoom: 1;
+    clear: both;
+}
 .admin-side-toggle{
 	position: absolute; cursor: pointer;
     z-index: 19940201;

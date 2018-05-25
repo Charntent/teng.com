@@ -1,0 +1,38 @@
+{extend name="common:base" /}
+{block name="title"}我的余额{/block}
+{block name="style"}
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/admin.css">
+{/block}
+{block name="main"}
+<div class="layadmin-trailer">
+    <div class="layui-fluid">
+        <div class="layui-card">
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">交易明细</li>
+                    <div class="searchBox">
+                        <form class="lay-form">
+                        <div class="layui-inline">
+                            <input class="layui-input" name="id"  placeholder="输入时间" style="width: 100px">
+                        </div>
+                        <button class="layui-btn" data-type="reload">搜索</button>
+                        </form>
+                    </div>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+
+                        <table class="layui-hide" id="dataTable"></table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}
+
+{block name="script"}
+<script type="text/javascript" src="__ROOT__dist/user/trade.js"></script>
+{/block}

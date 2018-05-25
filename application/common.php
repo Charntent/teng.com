@@ -31,3 +31,17 @@ function makePwd($pwd,$salt = ''){
     $salt = $salt?$salt:randomkeys(6);
     return md5($pwd.$salt);
 }
+
+
+function payTypeFormat($type = '')
+{
+    return $type == 1 ?'收入' : '支出';
+}
+
+function tradeTypeFormat($type = '')
+{
+    $tradeArs = [
+        'sys' => '系统调节'
+    ];
+    return isset($tradeArs[$type])?$tradeArs[$type]:'未知';
+}

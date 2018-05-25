@@ -36,22 +36,22 @@ var navs = [
              {
                 "title": "我的余额",
                 "icon": "fa-send",
-                "href": "/home/agents"
+                "href": "/thome/user/balance"
             },
             {
                 "title": "资金明细",
                 "icon": "fa-send",
-                "href": "/home/user"
+                "href": "/thome/user/trade"
             }, {
                 "title": "充值提现",
                 "icon": "fa-send",
-                "href": "/home/namevalidate"
+                "href": "/thome/user/recharge"
             }
 
             , {
                 "title": "收益管理",
                 "icon": "fa-send",
-                "href": "/home/creditlogs/index"
+                "href": "/thome/user/profit"
             }
         ]
     }, {
@@ -63,12 +63,12 @@ var navs = [
             {
                 "title": "我的身段",
                 "icon": "fa-send",
-                "href": "/home/order?status=0"
+                "href": "/thome/order?status=0"
             },
             {
                 "title": "申请成为开发者",
                 "icon": "fa-send",
-                "href": "/home/order?status=1"
+                "href": "/thome/order?status=1"
             }
         ]
     }
