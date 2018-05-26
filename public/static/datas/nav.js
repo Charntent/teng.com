@@ -54,23 +54,5 @@ var navs = [
                 "href": "/thome/user/profit"
             }
         ]
-    }, {
-        "title": "开发者",
-        "icon": "fa-cogs",
-        "spread": false,
-        "children": [
-
-            {
-                "title": "我的身段",
-                "icon": "fa-send",
-                "href": "/thome/order?status=0"
-            },
-            {
-                "title": "申请成为开发者",
-                "icon": "fa-send",
-                "href": "/thome/order?status=1"
-            }
-        ]
     }
-
 ];
