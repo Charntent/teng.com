@@ -17,7 +17,7 @@ Route::get('/passport/find$', 'passport/find');
 Route::post('/passport/signup$', 'passport/login');
 Route::get('/case', 'cases/index');
 Route::get('/compnent', 'compnent/index');
-
+Route::get('/contact', 'index/contact');
 return [
 
 ];

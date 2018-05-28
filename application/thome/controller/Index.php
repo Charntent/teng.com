@@ -13,4 +13,9 @@ class Index extends Controller
     {
         return 'hello,' . $name;
     }
+
+    public function contact()
+    {
+        return $this->fetch();
+    }
 }
