@@ -58,6 +58,40 @@ class Passport extends Controller
         return $this->fetch();
     }
 
+    public function editpwd()
+    {
+        return $this->fetch();
+    }
+
+    public function editpwdPost()
+    {
+        if(!session('user_id')) {
+            $this->error('请登陆系统');
+        }
+
+        $data = $this->request->post();
+        if($data['oldpwd'] == '' || $data['newpwd'] ==''){
+            $this->error('密码不能为空!');
+        }
+
+        if($data['newpwd']  != $data['newpwd1']){
+            $this->error('两次输入的密码不相同!');
+        }
+        $adminid =  Session::get('user_id');
+        $ps = model('user')->where("user_id='$adminid'")->field(['salt','userpwd'])->find();
+
+
+        if(!checkPwd($ps['userpwd'],$data['oldpwd'],$ps['salt'])){
+            $this->error('旧密码输入错误!');
+        }
+        $salt = $ps['salt'];
+        $new_pwd = makePwd($data['newpwd'],$salt);
+        model('user')->isUpdate(true)->save(['user_id' => $adminid, 'userpwd' => $new_pwd]);
+
+
+        return $this->success('修改成功');
+    }
+
 
 
 }

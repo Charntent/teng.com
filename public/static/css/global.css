@@ -4,7 +4,9 @@
  By 贤心
 
 */
-
+.layui-side{
+    z-index: 1002;
+}
 #handles{
     padding-bottom: 20px;
 }

@@ -1,0 +1,56 @@
+{extend name="common:base" /}
+{block name="main"}
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>修改密码</legend>
+</fieldset>
+<form class="layui-form">
+
+    <div class="layui-tab">
+
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show"><!--基本内容-->
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="title"><cate style="color:#FF5722;">*</cate>旧密码</label>
+                    <div class="layui-input-inline" style="width:312px;">
+                        <input class="layui-input" type="password" id="oldpwd" name="oldpwd" lay-verify="oldpwd" value="" placeholder="旧密码" autocomplete="off">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" for="source"><cate style="color:#FF5722">*</cate>新密码</label>
+                    <div class="layui-input-inline" style="width:312px;">
+                        <input class="layui-input" type="password" id="newpwd" name="newpwd" lay-verify="newpwd" value="" placeholder="新密码" autocomplete="off">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+
+                    <label class="layui-form-label" for="author"><cate style="color:#FF5722">*</cate>确认新密码</label>
+                    <div class="layui-input-inline" style="width:312px;">
+                        <input class="layui-input" type="password" id="newpwd1" name="newpwd1" lay-verify="newpwd1" value="" placeholder="确认新密码" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="hidden" name="submit" value="savePwd">
+                    <button class="layui-btn" id="savePwd" lay-submit="" lay-filter="savePwd">保存</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+
+        </div><!--/基本内容-->
+
+    </div>
+    </div>
+
+
+</form>
+
+
+
+</div>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__ROOT__dist/{$Request.controller|strtolower}/editpwd.js"></script>
+{/block}
