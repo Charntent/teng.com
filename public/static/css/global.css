@@ -524,3 +524,7 @@ body .site-demo-nav .layui-nav-item{line-height: 40px}
     transition: all .3s;
     -webkit-transition: all .3s;
 }
+
+.t-sites ul li a { 
+   text-align: center
+}

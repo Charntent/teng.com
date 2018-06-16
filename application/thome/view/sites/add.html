@@ -11,7 +11,7 @@
                     <ul class="layui-tab-title">
                       <li class="layui-this">网站设置</li>
                       <li>主色调和字体</li>
-                      <li>管理员管理</li>
+                     
                     </ul>
                     <div class="layui-tab-content">
                       <div class="layui-tab-item layui-show">
@@ -24,10 +24,37 @@
                             <div class="layui-form-item">
                               <label class="layui-form-label">网站LOGO</label>
                               <div class="layui-input-block">
-                                <input type="text" name="site_logo" required="" lay-verify="required" placeholder="请输入网站名称" autocomplete="off" class="layui-input">
+                                  <img class="layui-upload-img" id="test-upload-normal-img">
+                                <input type="hidden" id="site_logo" name="site_logo" required="" lay-verify="required" placeholder="请输入网站名称" autocomplete="off" class="layui-input">
+                                <div class="layui-col-md12">
+                                    <div class="layui-card">
+                                      <div class="layui-card-header">设定文件大小限制</div>
+                                      <div class="layui-card-body">
+                                        <button type="button" class="layui-btn layui-btn-danger" id="upload-logo">
+                                          <i class="layui-icon"></i>上传网站LOGO
+                                        </button><input class="layui-upload-file" type="file" accept="undefined" name="file">
+                                        <div class="layui-inline layui-word-aux">
+                                          尺寸320*320，大小限制 60KB 为内
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </div>
                             </div>
 
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">管理员账号</label>
+                                <div class="layui-input-block">
+                                  <input type="text" name="title" required="" lay-verify="required" placeholder="请输入管理员账号" autocomplete="off" class="layui-input">
+                                </div>
+                              </div>
+                            <div class="layui-form-item">
+                              <label class="layui-form-label">管理密码</label>
+                              <div class="layui-input-inline">
+                                <input type="password" name="password" required="" lay-verify="required" lay-vertype="tips" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                              </div>
+                              <div class="layui-form-mid layui-word-aux">输入管理员密码</div>
+                            </div>
                             <div class="layui-form-item">
                                 <label class="layui-form-label">状态</label>
                                 <div class="layui-input-block">
@@ -39,20 +66,20 @@
                         <div class="layui-form-item">
                           <label class="layui-form-label">文字主色调</label>
                           <div class="layui-input-block">
-                            <input type="text" name="title" required="" lay-verify="required" placeholder="请输入主色调" autocomplete="off" class="layui-input" value="#333">
+                            <input type="text" name="color_main" required="" lay-verify="required" placeholder="请输入主色调" autocomplete="off" class="layui-input" value="#333">
                           </div>
                       </div>
                       <div class="layui-form-item">
                           <label class="layui-form-label">文字次色调</label>
                           <div class="layui-input-block">
-                            <input type="text" name="title" required="" lay-verify="required" placeholder="请输入次色调" autocomplete="off" class="layui-input" value="#666">
+                            <input type="text" name="color_minor" required="" lay-verify="required" placeholder="请输入次色调" autocomplete="off" class="layui-input" value="#666">
                           </div>
                       </div>
 
                       <div class="layui-form-item">
                           <label class="layui-form-label">文字淡色调</label>
                           <div class="layui-input-block">
-                            <input type="text" name="title" required="" lay-verify="required" placeholder="请输入淡色调" autocomplete="off" class="layui-input" value="#999">
+                            <input type="text" name="color_light" required="" lay-verify="required" placeholder="请输入淡色调" autocomplete="off" class="layui-input" value="#999">
                           </div>
                       </div>
 
@@ -72,26 +99,11 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">文字最小字体</label>
                         <div class="layui-input-block">
-                          <input type="text" name="font_small" required="" lay-verify="required" placeholder="请输入文字最小字体" autocomplete="off" class="layui-input" value="#999">
+                          <input type="text" name="font_small" required="" lay-verify="required" placeholder="请输入文字最小字体" autocomplete="off" class="layui-input" value="12">
                         </div>
                     </div>
                       </div>
-                      <div class="layui-tab-item">
-                          <div class="layui-form-item">
-                              <label class="layui-form-label">管理员账号</label>
-                              <div class="layui-input-block">
-                                <input type="text" name="title" required="" lay-verify="required" placeholder="请输入管理员账号" autocomplete="off" class="layui-input">
-                              </div>
-                            </div>
-                          <div class="layui-form-item">
-                            <label class="layui-form-label">管理密码</label>
-                            <div class="layui-input-inline">
-                              <input type="password" name="password" required="" lay-verify="required" lay-vertype="tips" placeholder="请输入密码" autocomplete="off" class="layui-input">
-                            </div>
-                            <div class="layui-form-mid layui-word-aux">输入管理员密码</div>
-                          </div>
-                      </div>
-                      
+                 
                       
                     </div>
                     
@@ -101,7 +113,7 @@
                
                 <div class="layui-form-item">
                   <div class="layui-input-block">
-                    <button class="layui-btn" lay-submit="" lay-filter="formDemo">立即提交</button>
+                    <button class="layui-btn" lay-submit="" lay-filter="formSave">立即提交</button>
                 
                   </div>
                 </div>
@@ -111,5 +123,5 @@
 </div>
 {/block}
 {block name="script"}
-<script type="text/javascript" src="__ROOT__dist/sites/post.js"></script>
+<script type="text/javascript" src="__ROOT__dist/sites/post.js?_=V2.0.0.0"></script>
 {/block}
