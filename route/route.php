@@ -18,6 +18,8 @@ Route::post('/passport/signup$', 'passport/login');
 Route::get('/case', 'cases/index');
 Route::get('/compnent', 'compnent/index');
 Route::get('/contact', 'index/contact');
+Route::get('/news$', 'article/listArc');
+Route::get('/news/:aid$', 'article/show');
 return [
 
 ];

@@ -1,0 +1,19 @@
+{extend name="common:layout" /}
+{block name="title"}{$arc.title}{/block}
+{block name="style"}
+<link rel="stylesheet" href="__PUBLIC__/css/common.min.css">
+{/block}
+{block name="main"}
+<div class="container p90">
+    <section class="filter clearfix" id="filter" style="display:
+            block">
+        <div class="filter-order" id="J_filterOrder">
+
+        </div>
+
+    </section>
+    <section class="goods-list" id="goodsList">
+    {$arc.content}
+    </section>
+</div>
+{/block}

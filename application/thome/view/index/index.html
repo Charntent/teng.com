@@ -107,97 +107,23 @@
         </div>
     </div>
 
-    <div class="mod-index-ability mod-index-base iconShadow">
-        <div class="container">
-            <h3 class="fz34">丰富的基础能力</h3>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mod-ability-list">
-                    <a href="product/file.html" class="linkblock">
-                        <div class="list">
-                            <div class="thumbnail">
-                                <img class="lazy formatImg" data-src="img/icon1.png" >
-                            </div>
-                            <div class="thumbtext">
-                                <h4 class="fz22">文件能力</h4>
-                                <p class="text fz16">支持Office文档等46种格式</p>
-                                <p class="text fz16">更有高效、智能的文件管理服务</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mod-ability-list">
-                    <a href="product/video.html" class="linkblock">
-                        <div class="list">
-                            <div class="thumbnail">
-                                <img class="lazy formatImg" data-src="img/icon2.png">
-                            </div>
-                            <div class="thumbtext">
-                                <h4 class="fz22">视频能力</h4>
-                                <p class="text fz16">硬件解码 / 低系统资源消耗 / 播放更顺畅</p>
-                                <p class="text fz16">主流的点播/直播视频格式、协议支持</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 mod-ability-list">
-                    <a href="product/download.html" class="linkblock">
-                        <div class="list">
-                            <div class="thumbnail">
-                                <img class="lazy formatImg" data-src="img/icon8.png" >
-                            </div>
-                            <div class="thumbtext">
-                                <h4 class="fz22">下载能力</h4>
-                                <p class="text fz16">内嵌下载能力，无需调用其他下载资源</p>
-                                <p class="text fz16">减少劫持换包风险</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mod-index-business">
-        <div class="container">
-            <h3 class="fz34">强大的业务能力</h3>
-            <div class="mod-business-tab">
-                <ul class="fz24 clearfix">
-                    <li class="active"><a href="javascript:;">大数据</a></li>
-                    <li><a href="javascript:;">内容变现</a></li>
-                </ul>
-            </div>
-            <div class="mod-business-box">
-                <div class="box row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                        <h4 class="fz34">大数据</h4>
-                        <p class="fz16">了解移动互联网热点<br>洞察热点背后用户需求<br>提升商业效率</p>
-                        <a class="box-btn fz22" href="product/tbi.html">查看更多</a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                        <img class="formatImg" data-src="img/index-business-img1.png" >
-                    </div>
-                </div>
-                <div class="box row mod-hide">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                        <h4 class="fz34">内容变现</h4>
-                        <p class="text fz16">内容定制，页面灵活<br>轻松接入，随时调配<br>快速享受内容与商业变现一体化</p>
-                        <a class="box-btn fz22" href="product/portal.html">查看更多</a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
-                        <img class="formatImg" data-src="img/index-business-img2.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <div class="mod-index-business mod-index-news">
         <div class="container">
-            <h3 class="fz34">相关新闻资讯</h3>
-            <a class="box-btn fz22" href="news.html">查看更多</a>
+            <h3 class="fz34">新闻资讯</h3>
+            <a class="box-btn fz22" href="/news.html">查看更多</a>
             <div class="row">
+                <a :href="'news.html#/detail/'+art.id" v-for="art in articles">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+                        <div class="mod-news-box">
+                            <div class="img" v-if="art.pic != ''"><img class="lazy" :src="art.pic"></div>
+                            <p class="fz18 title"></p>
+                            <p class="fz22 sub-title">{{art.title}}</p>
+                            <p class="fz16 detail">{{art.info}}</p>
+                        </div>
+                    </div>
+                </a>
                 <a :href="'news.html#/detail/'+art.id" v-for="art in articles">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
                         <div class="mod-news-box">

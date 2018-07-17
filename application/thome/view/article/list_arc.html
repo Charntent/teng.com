@@ -1,0 +1,41 @@
+{extend name="common:layout" /}
+{block name="title"}新闻中心{/block}
+{block name="style"}
+<link rel="stylesheet" href="__PUBLIC__/css/common.min.css">
+{/block}
+{block name="main"}
+<div class="container p90">
+    <section class="filter clearfix" id="filter" style="display:
+            block">
+        <div class="filter-order" id="J_filterOrder">
+
+        </div>
+
+    </section>
+    <section class="goods-list" id="goodsList">
+        <ul class="goods-list-wrap clearfix" id="goodsListWrap">
+            {foreach $list as $K=>$v}
+            <li class="gl-item" data-init="{$v.id}">
+
+                <a data-mtype="store_list_kw_1" target="_blank" href="/news/{$v.id}.html" title="">
+                    <div class="gl-item-wrap">
+                        <div class="mod-pic">
+                            <img width="220" height="220" class="lazy j-modProduct" data-original="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@240x240.jpg" src="//openfile.meizu.com/group1/M00/03/BC/Cgbj0Vq9-oeARs_XAALvUdl5qpo302.png@240x240.jpg" style="display: inline;">
+                        </div>
+                        <h2>{$v.title}</h2>
+                        <h3 class="red" title="{$v.title}">
+                            {$v.description}
+                        </h3>
+                        <dd class="mod-price">
+                            <span>浏览量：</span>
+                            <span class="vm-price">{$v.click}</span>
+                        </dd>
+                    </div>
+                </a>
+            </li>
+            {/foreach}
+
+        </ul>
+    </section>
+</div>
+{/block}
